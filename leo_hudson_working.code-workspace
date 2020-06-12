@@ -1,0 +1,16 @@
+{
+	"folders": [
+		{
+			"path": "."
+		},
+		{
+			"path": "../../Desktop/Test Run/simple-css-overlay-master"
+		},
+		{
+			"path": "../../Downloads/Dreamweaver templates/hudsonschoice.co.uk"
+		}
+	],
+	"settings": {
+		"liveServer.settings.multiRootWorkspaceName": "hudsonschoice.co.uk"
+	}
+}

@@ -1,0 +1,89 @@
+<!DOCTYPE HTML>
+<html lang="en">
+<head>
+
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width,height=device-height,initial-scale=1">
+
+<title>untitled document</title>
+
+<link rel="stylesheet" href="screen.css" media="screen">
+
+<style media="screen">
+body {
+    background-color: #f0f0f0;
+    font: 1em/160% verdana, arial, helvetica, sans-serif;
+ }
+
+.swap {
+  background-image: url('https://farm9.staticflickr.com/8382/8558295631_0f56c1284f_b.jpg');
+  background-repeat: no-repeat;
+  background-size: cover;
+  background-position: center;
+  width: 12.5em;
+ }
+
+.swap a {
+  display: block;
+ }
+
+.swap  a img {
+  opacity: 1;
+  width: 12.5em;
+  height: auto;
+  display: block;
+  transition: all 0.6s ease-in-out;
+ }
+
+ .swap a:hover img {
+  opacity: 0;
+  transition: all 0.6s ease-in-out;
+}
+</style>
+
+</head>
+<body>
+ 
+ <div class="swap">
+   <a id="pic">
+     <img src="https://farm9.staticflickr.com/8242/8558295633_f34a55c1c6_b.jpg" alt="tiger image">
+   </a>
+ </div>
+
+<script>
+(function( d ) {
+   'use strict';
+
+   var el,eln;
+
+   d.getElementById( 'pic' ).addEventListener( 'touchstart', 
+function(){ 
+   el = this.firstChild;
+   eln = el.nextSibling;
+
+   if ( el.nodeType === 1 ){
+        el.style.opacity = 0;
+        el.style.transition = 'all .6s ease-in-out';
+      }
+   else {
+        eln.style.opacity = 0;
+        eln.style.transition = 'all 0.6s ease-in-out';
+      }
+    },false );
+
+   d.getElementById( 'pic' ).addEventListener( 'touchend', 
+function(){
+   if ( el.nodeType === 1 ){
+        el.style.opacity = 1;
+        el.style.transition = 'all .6s ease-in-out';
+     }
+   else {
+        eln.style.opacity = 1;
+        eln.style.transition = 'all 0.6s ease-in-out';
+      }
+    },false  );
+}( document ));
+</script>
+
+</body>
+</html>

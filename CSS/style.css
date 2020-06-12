@@ -1,0 +1,39 @@
+/* line 4, ../sass/style.scss */
+#outer-box {
+  display: block;
+    width: 100%;
+  height: auto !important;
+    
+  position: relative;
+}
+/* line 10, ../sass/style.scss */
+#outer-box img {
+  width: 100%;
+  height: auto !important;
+     min-width: 100%;
+        max-width: 100%;
+}
+/* line 15, ../sass/style.scss */
+#outer-box #inner-box {
+  height: auto !important;
+  width: 50%;
+  opacity: 0;
+  top: 15%;
+  left: 25%;
+  position: absolute;
+  padding: 0;
+  transition: opacity .5s;
+}
+/* line 26, ../sass/style.scss */
+#outer-box #inner-box p {
+  color: #fff;
+  line-height: 100px;
+  font-family: 'arial';
+  text-align: center;
+  font-size: 25px;
+}
+/* line 36, ../sass/style.scss */
+#outer-box:hover #inner-box {
+  opacity: .75;
+  transition: opacity .5s;
+}

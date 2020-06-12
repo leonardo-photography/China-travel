@@ -1,0 +1,13 @@
+{
+	"folders": [
+		{
+			"path": "."
+		},
+		{
+			"path": "../../Desktop/Test Run/simple-css-overlay-master"
+		}
+	],
+	"settings": {
+		"liveServer.settings.multiRootWorkspaceName": "simple-css-overlay-master"
+	}
+}

@@ -1,0 +1,43 @@
+$pink-color: #FD8698;
+$rgba-pink: rgba(253,134,152,0.8);
+
+#outer-box {
+  width: 300px;
+  height: 194px;
+  display:block;
+  position:relative;
+
+  img {
+    width: 300px;
+    height: auto;
+  }
+
+  #inner-box {
+    background-color: $rgba-pink;
+    height: 100%;
+    width: 100%;
+    opacity: 0;
+    top: 0;
+    left: 0;
+    position: absolute;
+    padding: 0;
+    transition: opacity .5s;
+
+    p {
+      color: #fff;
+      line-height: 100px;
+      font-family: 'arial';
+      text-align: center;
+      font-size: 25px;
+    }
+  }
+
+  &:hover {
+    #inner-box {
+      opacity: 1;
+      transition: opacity .5s;
+    }
+  }
+}
+
+
